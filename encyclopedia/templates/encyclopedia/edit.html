@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+  Edit Page
+{% endblock %}
+
+{% block body %}
+
+<h1>Edit Page for {{title}}</h1>
+<hr>
+<form action="/wiki/{{title}}/edit", method="POST">
+    {% csrf_token %}
+    <div class="form-group w-80">
+        <label for="content">Content </label>
+        <textarea class="form-control rounded-0" rows = "10" cols="2" name = "new_description" required>{{text|safe}}</textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Save the edits</button>
+</form>
+
+
+
+
+  
+{% endblock %}
