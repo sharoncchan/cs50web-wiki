@@ -22,7 +22,7 @@ This project contains the features below where a user can:
 
 #### Files and directories
   - `encyclopedia` - main application directory.
-    - `static/network` contains all static content.
+    - `static/encyclopedia` contains all static content.
         - `styles.css` contains compiled CSS file
 
     - `templates/encyclopedia` contains all application templates.
